@@ -11,7 +11,7 @@
     "release": "turbo build --filter=docs^... && changeset publish"
   },
   "devDependencies": {
-    "@acme/eslint-config": "workspace:*",
+    "@kyoten/eslint-config": "workspace:*",
     "@changesets/cli": "^2.27.1",
     "eslint": "^8.56.0",
     "prettier": "^3.1.1",
