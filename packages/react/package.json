@@ -29,6 +29,7 @@
     "access": "public"
   },
   "dependencies": {
+    "@react-three/drei": "^9.99.3",
     "@react-three/fiber": "^8.15.16",
     "@types/three": "^0.161.2",
     "three": "^0.161.0"

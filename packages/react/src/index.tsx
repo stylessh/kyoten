@@ -1,4 +1,7 @@
 import React from "react";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
+import Particles from "./particles";
 
 interface KyotenProps {
   image: string;
@@ -12,7 +15,12 @@ interface KyotenProps {
 const Kyoten = ({ image }: KyotenProps): JSX.Element => {
   if (!image) throw new Error("No image provided.");
 
-  return <div>{image}</div>;
+  return (
+    <Canvas id="kyoten-webgl" style={{ height: "100vh", width: "100vw" }}>
+      <Particles image={image} />
+      <OrbitControls />
+    </Canvas>
+  );
 };
 
 export default Kyoten;
